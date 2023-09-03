@@ -514,7 +514,7 @@
 
 	wifisd:wifi-sd@4320000 {
 		compatible = "cvitek,cv180x-sdio";
-		bus-width = <4>;
+		bus-width = <1>;
 		reg = <0x0 0x4320000 0x0 0x1000>;
 		reg_names = "core_mem";
 		src-frequency = <375000000>;
@@ -527,7 +527,11 @@
 		pll_reg = <0x300207C>;
 		no-mmc;
 		no-sd;
-		status = "disabled";
+		status = "okay";
+		rtl8189ftv: wifi@1 {
+                	reg = <1>;
+        	};
+
 	};
 
 	i2s_mclk: i2s_mclk {

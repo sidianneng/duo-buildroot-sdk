@@ -224,7 +224,7 @@ int board_init(void)
 #elif defined(CONFIG_SPI_FLASH)
 	pinmux_config(PINMUX_SPI_NOR);
 #endif
-	// pinmux_config(PINMUX_SDIO1);
+	pinmux_config(PINMUX_SDIO1);
 	pinmux_config(PINMUX_USB);
 	//pinmux_config(PINMUX_SPI0);
 	//pinmux_config(PINMUX_SPI2);
